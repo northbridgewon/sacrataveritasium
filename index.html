@@ -1,11 +1,8 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
     <head>
-
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-CKX5Y731MW"></script>
-
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -14,81 +11,118 @@
         </script>
 
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-
         <link rel="manifest" href="/site.webmanifest">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <meta name="description" content="The final definite commandments which are essential for correctly aligned creatures in modern times.">
-
         <meta name="robots" content="index, follow" />
-
         <meta charset="utf-8">
 
         <title>The Sacrata Veritasium Commandments</title>
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Merriweather:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
         <style>
             body {
-                font-family: system-ui;
-                line-height: 1.6;
-                background-color: #212121;
-                max-width: 800px;
+                /*font-family: system-ui; Old font */
+                font-family: 'Lato', sans-serif; /* New base font for readability */
+                line-height: 1.7; /* Slightly increased for better text flow */
+                background-color: #1a1a1a; /* Darker, more sophisticated background */
+                color: #c0c0c0; /* Default text color, light gray for contrast */
+                max-width: 850px; /* Slightly wider for better use of space */
                 margin: 0 auto;
-                padding: 20px;
+                padding: 25px; /* Increased padding */
+                -webkit-font-smoothing: antialiased; /* Smoother fonts on WebKit */
+                -moz-osx-font-smoothing: grayscale; /* Smoother fonts on Firefox */
             }
 
             h1 {
-                font-size: 33px;
-                color: #d4af37;
+                font-family: 'Cinzel', serif; /* Majestic font for the main title */
+                font-size: 38px; /* Slightly larger */
+                font-weight: 700;
+                color: #e4c555; /* Richer gold color */
                 text-align: center;
-                margin-bottom: 30px;
+                margin-bottom: 40px; /* More space below title */
+                text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Subtle shadow for depth */
             }
 
             .commandment {
-                margin-bottom: 30px;
-                padding: 20px;
-                border: 1px solid #FAFAFA;
-                background-color: #FAFAFA;
+                margin-bottom: 35px; /* Increased spacing between commandments */
+                padding: 25px; /* More internal padding */
+                border: 1px solid #3a3a3a; /* Darker, subtle border */
+                background-color: #282828; /* Dark card background, distinct from body */
                 text-align: center;
-                border-radius: 25px;
-                box-shadow: 0 4px 4px rgba(212, 175, 55, 0.726);
-                transition: transform 0.3s ease-in-out;
+                border-radius: 15px; /* Slightly less rounded for a more formal look */
+                box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6), 0 2px 5px rgba(228, 197, 85, 0.25); /* More refined shadow with gold hint */
+                transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.35s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smoother transition */
             }
 
             .commandment:hover {
-                transform: translateY(-4px);
+                transform: translateY(-6px) scale(1.015); /* Enhanced hover: lift and slight scale */
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 4px 12px rgba(228, 197, 85, 0.4); /* More pronounced shadow on hover */
             }
 
             h2 {
-                font-size: 21px;
-                color: #616161;
-                margin-bottom: 10px;
+                font-family: 'Merriweather', serif; /* Dignified serif for commandment titles */
+                font-size: 24px; /* Increased size */
+                font-weight: 700;
+                color: #d0d0d0; /* Lighter gray for H2, good contrast on dark card */
+                margin-top: 0; /* Remove default top margin if any */
+                margin-bottom: 15px; /* More space below H2 */
             }
 
             p {
-                font-size: 16px;
-                color: #9E9E9E;
+                font-family: 'Lato', sans-serif; /* Consistent with body for readability */
+                font-size: 17px; /* Slightly larger paragraph text */
+                color: #b0b0b0; /* Softer gray for paragraph text */
+                line-height: 1.75; /* Improved line height for paragraphs */
             }
 
-            @media screen and (max-width: 600px) {
+            /* Responsive adjustments */
+            @media screen and (max-width: 768px) { /* Adjusted breakpoint */
                 body {
-                  padding: 10px;
+                  padding: 20px;
                 }
 
                 h1 {
-                  font-size: 28px;
+                  font-size: 32px; /* Adjusted for medium screens */
+                  margin-bottom: 30px;
+                }
+
+                .commandment {
+                    padding: 20px;
+                    margin-bottom: 30px;
                 }
 
                 h2 {
-                  font-size: 20px;
+                  font-size: 21px; /* Adjusted for medium screens */
                 }
 
                 p {
-                  font-size: 16px;
+                  font-size: 16px; /* Adjusted for medium screens */
+                }
+            }
+
+            @media screen and (max-width: 480px) { /* More granular breakpoint for small mobiles */
+                body {
+                  padding: 15px;
+                }
+                h1 {
+                  font-size: 26px; /* Further adjustment for small screens */
+                }
+                .commandment {
+                    padding: 15px;
+                    border-radius: 10px;
+                }
+                h2 {
+                  font-size: 19px;
+                }
+                p {
+                  font-size: 15px;
                 }
             }
         </style>
@@ -170,7 +204,7 @@
       The site-name itself should only redirect the DNS of: https://yaiehuowah.faith/.
       
       了,
-      0
+      零
       -->
 
     </footer>
